@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 2017-11-18 10:33:45
+-- Generation Time: 2017-11-18 11:39:47
 -- 服务器版本： 10.1.19-MariaDB
 -- PHP Version: 5.6.28
 
@@ -108,6 +108,13 @@ CREATE TABLE `password_resets` (
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- 转存表中的数据 `password_resets`
+--
+
+INSERT INTO `password_resets` (`email`, `token`, `created_at`) VALUES
+('youxianyen@sina.com', '740cd0de7ebcc064b239db2a2e50ba8250429307435391e039755d7e6c75a5e4', '2017-11-18 10:38:23');
+
 -- --------------------------------------------------------
 
 --
@@ -129,7 +136,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'youxianyen', 'youxianyen@sina.com', '$2y$10$.8xeQHjO8ebxApzL7kxFpe5NolhqCbbwaOsQmZpW47NB9QMRPalv2', NULL, '2017-11-18 09:32:51', '2017-11-18 09:32:51');
+(1, 'test', 'test@test.com', '$2y$10$.8xeQHjO8ebxApzL7kxFpe5NolhqCbbwaOsQmZpW47NB9QMRPalv2', 'tqbbfFCkE5MM9SLR8aIPZlXDtcga9LcZ9zeQ39p1nOj27GVMBAxuL6zVxe92', '2017-11-18 09:32:51', '2017-11-18 10:36:49');
 
 --
 -- Indexes for dumped tables
