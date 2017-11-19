@@ -17,3 +17,14 @@ php artisan migrate
 php artisan db:seed
 ok；人品好的话；
 一个跟我博客一样的项目就完成了；
+
+后台
+
+http://127.0.0.1/admin
+账号:test@test.com
+密码：123456
+没有后台账号可以自己注册一个
+
+前台
+
+http://127.0.0.1/
